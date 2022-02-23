@@ -23,8 +23,8 @@ export function Navbar() {
       </NavBar>
       {sidebar ? 
         <Nav>
-          <NavItems onClick={showSidebar}>
-            <NavToggle>
+          <NavItems>
+            <NavToggle onClick={showSidebar}>
               <StyledNavLink to="#">
                 <AiIcons.AiOutlineClose></AiIcons.AiOutlineClose>
               </StyledNavLink>

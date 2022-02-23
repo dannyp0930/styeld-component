@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import { Home } from './components/home/Home';
-import { Navbar } from './common/Navbar';
+import { Home } from '../components/home/Home';
+import { Navbar } from '../common/Navbar';
 
 export default function App() {
 
