@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavBar = styled.div`
-  background-color: LightSkyBlue;
+  background-color: #6667AB;
   height: 4rem;
   display: flex;
   justify-items: center;
@@ -11,7 +11,7 @@ export const NavBar = styled.div`
 
 export const NavMenuBar = styled(NavLink)`
   margin-left: 2rem;
-  color: Blue;
+  color: #AB9E67;
   font-size: 2rem;
   background:none;
 `;
@@ -20,9 +20,8 @@ export const Nav = styled.nav`
   font-family: Maru Buri;
   font-size: 1.5em;
   text-align: center;
-  color: blue;
   text-decoration: none;
-  background-color: LightSkyBlue;
+  background-color: #6667AB;
   width: 10rem;
   height: 100%;
   display: flex;
@@ -34,19 +33,35 @@ export const Nav = styled.nav`
 
 export const NavItems = styled.ul`
   width: 100%;
+  padding-left: 0;
 `;
 
 export const NavToggle = styled.li`
-  color: blue;
-  background-color: LightSkyBlue;
+  background-color: #6667AB;
   width: 100%;
   height: 5rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 `;
 
-export const StyledNavLink = styled(NavLink)`
-  color: Blue;
+export const NavItem = styled.li`
+  list-style: none;
+  padding-left:0;
+`;
+
+export const Close = styled(NavLink)`
+  color: #AB9E67;
   text-decoration: none;
+
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  color: #AB9E67;
+  text-decoration: none;
+
+  &.active {
+		color: #2F305E;
+		font-weight: bold;
+	}
 `;

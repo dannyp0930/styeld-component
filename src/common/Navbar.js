@@ -7,7 +7,9 @@ import {
   Nav,
   NavItems,
   NavToggle,
+  NavItem,
   StyledNavLink,
+  Close,
 } from './Styles'
 
 export function Navbar() {
@@ -25,11 +27,16 @@ export function Navbar() {
         <Nav>
           <NavItems>
             <NavToggle onClick={showSidebar}>
-              <StyledNavLink to="#">
+              <Close to="#">
                 <AiIcons.AiOutlineClose></AiIcons.AiOutlineClose>
-              </StyledNavLink>
+              </Close>
             </NavToggle>
-            <StyledNavLink to="/">Home</StyledNavLink>
+            <NavItem>
+              <StyledNavLink to="/">Home</StyledNavLink>
+            </NavItem>
+            <NavItem>
+              <StyledNavLink to="about">About</StyledNavLink>
+            </NavItem>
           </NavItems>
         </Nav>
       : null}
