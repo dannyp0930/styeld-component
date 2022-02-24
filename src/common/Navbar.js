@@ -23,23 +23,21 @@ export function Navbar() {
           <FaIcons.FaBars onClick={showSidebar}/>
         </NavMenuBar>
       </NavBar>
-      {sidebar ? 
-        <Nav>
-          <NavItems>
-            <NavToggle onClick={showSidebar}>
-              <Close to="#">
-                <AiIcons.AiOutlineClose></AiIcons.AiOutlineClose>
-              </Close>
-            </NavToggle>
-            <NavItem>
-              <StyledNavLink to="/">Home</StyledNavLink>
-            </NavItem>
-            <NavItem>
-              <StyledNavLink to="buttons">Buttons</StyledNavLink>
-            </NavItem>
-          </NavItems>
-        </Nav>
-      : null}
+      {sidebar && <Nav>
+        <NavItems>
+          <NavToggle onClick={showSidebar}>
+            <Close to="#">
+              <AiIcons.AiOutlineClose></AiIcons.AiOutlineClose>
+            </Close>
+          </NavToggle>
+          <NavItem>
+            <StyledNavLink to="/">Home</StyledNavLink>
+          </NavItem>
+          <NavItem>
+            <StyledNavLink to="buttons">Buttons</StyledNavLink>
+          </NavItem>
+        </NavItems>
+      </Nav>}
     </>
   );
 };
