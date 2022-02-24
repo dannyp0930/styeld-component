@@ -15,3 +15,9 @@
   font-weight: 50;
   src: url("./maru_buri.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Nanum Gothic";
+  font-weight: 50;
+  src: url("./nanum_gothic.woff") format("woff");
+}
