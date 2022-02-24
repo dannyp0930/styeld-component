@@ -35,7 +35,7 @@ export function Navbar() {
               <StyledNavLink to="/">Home</StyledNavLink>
             </NavItem>
             <NavItem>
-              <StyledNavLink to="about">About</StyledNavLink>
+              <StyledNavLink to="buttons">Buttons</StyledNavLink>
             </NavItem>
           </NavItems>
         </Nav>
