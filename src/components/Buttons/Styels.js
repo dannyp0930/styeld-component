@@ -16,7 +16,11 @@ export const Button = styled.button`
   &:hover {
     background-color: ${props => props.primary ? "white" : "#6667AB"};
     color: ${props => props.primary ? "#6667AB" : "white"};
-  }
+  };
+
+  &:active {
+    font-weight: bold;
+  };
 `;
 
 // Extending Styles
