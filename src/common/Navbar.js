@@ -17,7 +17,7 @@ export function Navbar() {
   function showSidebar() { setSidebar(!sidebar) };
 
   return (
-    <>
+    <div>
       <NavBar>
         <NavMenuBar to="#">
           <FaIcons.FaBars onClick={showSidebar}/>
@@ -38,6 +38,6 @@ export function Navbar() {
           </NavItem>
         </NavItems>
       </Nav>}
-    </>
+    </div>
   );
 };
