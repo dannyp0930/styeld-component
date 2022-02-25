@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 // Adapting based on props
-export const Button = styled.button`
 
-  background-color: #6667AB;
-  color: white;
+interface Iprops {
+  primary?: boolean;
+}
+
+export const Button = styled.button<Iprops>`
+  background: ${props => props.primary ? "#6667AB" : "white"};
+  color: ${props => props.primary ? "white" : "#6667AB"};
+
   font-family: Nanum Gothic;
   font-size: 1rem;
   margin: 1rem;
@@ -14,8 +19,8 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: white;
-    color: #6667AB;
+    background-color: ${props => props.primary ? "white" : "#6667AB"};
+    color: ${props => props.primary ? "#6667AB" : "white"};
   };
 
   &:active {
@@ -26,11 +31,11 @@ export const Button = styled.button`
 // Extending Styles
 
 export const ExtendButton = styled(Button)`
-  background-color: #AB9E67;
+  color: #AB9E67;
   border-color: #AB9E67;
 
   &:hover {
-    background-color: white;
-    color: #AB9E67;
+    background-color: #AB9E67;
+    color: white;
   }
 `;
