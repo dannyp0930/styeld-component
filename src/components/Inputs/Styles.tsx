@@ -8,7 +8,6 @@ interface IProps {
 export const Input = styled.input<IProps>`
   padding: 0.5rem;
   margin: 0.5rem;
-  font-family: Nanum Gothic;
   font-size: 1rem;
   background: ${props => props.backColor || "#AB9E67"};
   color: ${props => props.inputColor || "#6667AB"};

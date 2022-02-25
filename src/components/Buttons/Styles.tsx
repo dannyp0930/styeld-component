@@ -10,7 +10,6 @@ export const Button = styled.button<Iprops>`
   background: ${props => props.primary ? "#6667AB" : "white"};
   color: ${props => props.primary ? "white" : "#6667AB"};
 
-  font-family: Nanum Gothic;
   font-size: 1rem;
   margin: 1rem;
   padding: 0.25rem 1rem;
