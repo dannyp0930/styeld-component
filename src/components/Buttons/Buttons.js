@@ -1,14 +1,13 @@
-import { Button, ExtendButton } from "./Styels";
+import { Button, ExtendButton } from "./Styles";
 
 export function Buttons() {
   return (
     <div>
       <Button>Normal Button</Button>
-      <Button primary>Primary Button</Button>
-      <ExtendButton>Tomato Button</ExtendButton>
+      <ExtendButton>Extend Button</ExtendButton>
       <br/>
       <Button as="a" href="#">Link with Normal Button</Button>
-      <ExtendButton as="a" href="#">Link with Tomato Button</ExtendButton>
+      <ExtendButton as="a" href="#">Link with Extend Button</ExtendButton>
     </div>
   )
 };

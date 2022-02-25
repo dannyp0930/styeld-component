@@ -36,6 +36,9 @@ export function Navbar() {
           <NavItem>
             <StyledNavLink to="buttons">Buttons</StyledNavLink>
           </NavItem>
+          <NavItem>
+            <StyledNavLink to="inputs">Inputs</StyledNavLink>
+          </NavItem>
         </NavItems>
       </Nav>}
     </div>
