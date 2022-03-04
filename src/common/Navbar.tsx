@@ -26,8 +26,8 @@ export function Navbar() {
       </NavBar>
       {sidebar && <Nav>
         <NavItems>
-          <NavToggle onClick={showSidebar}>
-            <Close to="#">
+          <NavToggle>
+            <Close to="#" onClick={showSidebar}>
               <AiIcons.AiOutlineClose></AiIcons.AiOutlineClose>
             </Close>
           </NavToggle>
