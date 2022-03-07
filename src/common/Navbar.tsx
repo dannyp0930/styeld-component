@@ -31,15 +31,10 @@ export function Navbar() {
               <AiIcons.AiOutlineClose></AiIcons.AiOutlineClose>
             </Close>
           </NavToggle>
-          <NavItem>
-            <StyledNavLink to="/">Home</StyledNavLink>
-          </NavItem>
-          <NavItem>
-            <StyledNavLink to="buttons">Buttons</StyledNavLink>
-          </NavItem>
-          <NavItem>
-            <StyledNavLink to="inputs">Inputs</StyledNavLink>
-          </NavItem>
+          <NavItem><StyledNavLink to="/">Home</StyledNavLink></NavItem>
+          <NavItem><StyledNavLink to="buttons">Buttons</StyledNavLink></NavItem>
+          <NavItem><StyledNavLink to="inputs">Inputs</StyledNavLink></NavItem>
+          <NavItem><StyledNavLink to="grid">Grid</StyledNavLink></NavItem>
         </NavItems>
       </Nav>}
     </div>
