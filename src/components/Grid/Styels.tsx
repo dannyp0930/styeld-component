@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface Cprops {
+  height?: string;
+}
+
+export const Container = styled.div<Cprops>`
   display: grid;
   width: 50%;
-  height: 100vh;
+  height: ${props => props.height ? props.height : '100vh'};
   color: black;
   margin: 1rem auto;
   grid-template-columns: repeat(auto-fit, minmax(8.33%, auto));
