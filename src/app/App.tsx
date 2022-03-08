@@ -5,6 +5,7 @@ import { Navbar } from '../common/Navbar';
 import { Buttons } from '../components/Buttons/Buttons';
 import { Inputs } from '../components/Inputs/Inputs';
 import { Grid } from '../components/Grid/Grid';
+import { Accordion } from '../components/Accordion/Accordion';
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='buttons' element={<Buttons/>}></Route>
         <Route path='inputs' element={<Inputs/>}></Route>
         <Route path='grid' element={<Grid/>}></Route>
+        <Route path='accordion' element={<Accordion/>}></Route>
       </Routes>
     </div>
   );

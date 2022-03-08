@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Item } from './Styels'
+import { Container, Item } from './Styles'
 
 export function Grid() {
   return (
